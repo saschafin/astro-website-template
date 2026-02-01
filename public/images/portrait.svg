@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect fill="#374151" width="800" height="800"/>
+  <circle cx="400" cy="300" r="120" fill="#4B5563"/>
+  <ellipse cx="400" cy="650" rx="200" ry="150" fill="#4B5563"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" fill="#9CA3AF">
+    Portrait (800×800)
+  </text>
+</svg>
