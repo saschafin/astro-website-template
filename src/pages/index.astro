@@ -1,0 +1,225 @@
+---
+// index.astro - Startseite
+// 
+// ANLEITUNG FÜR KUNDEN:
+// Ersetze alle [PLATZHALTER] mit deinen eigenen Daten.
+// Eine vollständige Liste findest du in PLATZHALTER.md
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const pageTitle = "[FIRMA_NAME] | [SLOGAN]";
+const pageDescription = "[META_BESCHREIBUNG]";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <Header />
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="hero-badge">[ZIELGRUPPE]</span>
+                    <h1>[HERO_HEADLINE]</h1>
+                    <p>[HERO_SUBHEADLINE]</p>
+                    <div class="hero-buttons">
+                        <a href="[CALENDLY_URL]" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                            [CTA_BUTTON_TEXT]
+                        </a>
+                        <a href="#leistungen" class="btn btn-outline-light">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2>[FEATURES_HEADLINE]</h2>
+                <p class="text-muted" style="max-width: 600px; margin: 16px auto 0;">[FEATURES_SUBHEADLINE]</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">[FEATURE_1_ICON]</div>
+                    <h3>[FEATURE_1_TITEL]</h3>
+                    <p>[FEATURE_1_TEXT]</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">[FEATURE_2_ICON]</div>
+                    <h3>[FEATURE_2_TITEL]</h3>
+                    <p>[FEATURE_2_TEXT]</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">[FEATURE_3_ICON]</div>
+                    <h3>[FEATURE_3_TITEL]</h3>
+                    <p>[FEATURE_3_TEXT]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="comparison-grid">
+                <div class="comparison-card problem">
+                    <h3>[PROBLEM_HEADLINE]</h3>
+                    <ul class="comparison-list">
+                        <li>[PROBLEM_1]</li>
+                        <li>[PROBLEM_2]</li>
+                        <li>[PROBLEM_3]</li>
+                        <li>[PROBLEM_4]</li>
+                        <li>[PROBLEM_5]</li>
+                    </ul>
+                </div>
+                <div class="comparison-card solution">
+                    <h3>[SOLUTION_HEADLINE]</h3>
+                    <ul class="comparison-list">
+                        <li>[SOLUTION_1]</li>
+                        <li>[SOLUTION_2]</li>
+                        <li>[SOLUTION_3]</li>
+                        <li>[SOLUTION_4]</li>
+                        <li>[SOLUTION_5]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="leistungen">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2>Unsere Leistungen</h2>
+                <p class="text-muted">Wähle das passende Angebot für dein Unternehmen</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="/images/service-1.jpg" alt="[SERVICE_1_TITEL]" class="service-image">
+                    <div class="service-content">
+                        <h3>[SERVICE_1_TITEL]</h3>
+                        <ul class="service-list">
+                            <li>[SERVICE_1_PUNKT_1]</li>
+                            <li>[SERVICE_1_PUNKT_2]</li>
+                            <li>[SERVICE_1_PUNKT_3]</li>
+                            <li>[SERVICE_1_PUNKT_4]</li>
+                        </ul>
+                        <a href="[CALENDLY_URL]" target="_blank" class="btn btn-primary">Anfragen</a>
+                    </div>
+                </div>
+                <div class="service-card featured">
+                    <span class="service-badge">Beliebt</span>
+                    <img src="/images/service-2.jpg" alt="[SERVICE_2_TITEL]" class="service-image">
+                    <div class="service-content">
+                        <h3>[SERVICE_2_TITEL]</h3>
+                        <ul class="service-list">
+                            <li>[SERVICE_2_PUNKT_1]</li>
+                            <li>[SERVICE_2_PUNKT_2]</li>
+                            <li>[SERVICE_2_PUNKT_3]</li>
+                            <li>[SERVICE_2_PUNKT_4]</li>
+                        </ul>
+                        <a href="[CALENDLY_URL]" target="_blank" class="btn btn-primary">Anfragen</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="/images/service-3.jpg" alt="[SERVICE_3_TITEL]" class="service-image">
+                    <div class="service-content">
+                        <h3>[SERVICE_3_TITEL]</h3>
+                        <ul class="service-list">
+                            <li>[SERVICE_3_PUNKT_1]</li>
+                            <li>[SERVICE_3_PUNKT_2]</li>
+                            <li>[SERVICE_3_PUNKT_3]</li>
+                            <li>[SERVICE_3_PUNKT_4]</li>
+                        </ul>
+                        <a href="[CALENDLY_URL]" target="_blank" class="btn btn-primary">Anfragen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-gray" id="uber-mich">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="/images/portrait.jpg" alt="[VORNAME_NACHNAME]">
+                </div>
+                <div class="about-content">
+                    <h2>[VORNAME_NACHNAME]</h2>
+                    <p class="about-role">[BERUFSBEZEICHNUNG]</p>
+                    <p>[UEBER_MICH_TEXT_1]</p>
+                    <p>[UEBER_MICH_TEXT_2]</p>
+                    <a href="[CALENDLY_URL]" target="_blank" class="btn btn-primary" style="margin-top: 16px;">
+                        Lass uns sprechen
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 60px;">Das sagen unsere Kunden</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"[TESTIMONIAL_1_TEXT]"</p>
+                    <span class="testimonial-author">[TESTIMONIAL_1_AUTOR]</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"[TESTIMONIAL_2_TEXT]"</p>
+                    <span class="testimonial-author">[TESTIMONIAL_2_AUTOR]</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"[TESTIMONIAL_3_TEXT]"</p>
+                    <span class="testimonial-author">[TESTIMONIAL_3_AUTOR]</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-dark cta-section">
+        <div class="container">
+            <h2>[CTA_HEADLINE]</h2>
+            <p>[CTA_SUBHEADLINE]</p>
+            <a href="[CALENDLY_URL]" target="_blank" class="btn btn-white btn-lg">[CTA_BUTTON_TEXT]</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 60px;">Häufige Fragen</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>[FAQ_1_FRAGE]</summary>
+                    <p>[FAQ_1_ANTWORT]</p>
+                </details>
+                <details class="faq-item">
+                    <summary>[FAQ_2_FRAGE]</summary>
+                    <p>[FAQ_2_ANTWORT]</p>
+                </details>
+                <details class="faq-item">
+                    <summary>[FAQ_3_FRAGE]</summary>
+                    <p>[FAQ_3_ANTWORT]</p>
+                </details>
+                <details class="faq-item">
+                    <summary>[FAQ_4_FRAGE]</summary>
+                    <p>[FAQ_4_ANTWORT]</p>
+                </details>
+                <details class="faq-item">
+                    <summary>[FAQ_5_FRAGE]</summary>
+                    <p>[FAQ_5_ANTWORT]</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</BaseLayout>

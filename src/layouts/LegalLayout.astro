@@ -1,0 +1,22 @@
+---
+// LegalLayout.astro - Layout für rechtliche Seiten (Impressum, Datenschutz)
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<BaseLayout title={title} description={`${title} - Rechtliche Informationen`}>
+    <Header />
+    
+    <main class="legal-content">
+        <slot />
+    </main>
+    
+    <Footer />
+</BaseLayout>
